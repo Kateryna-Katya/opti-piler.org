@@ -1,225 +1,233 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <?= $domainTitle ?> — Инновации на пальцах
+        <?= $domainTitle ?> — Innowacja na wyciągnięcie ręki
     </title>
-<link rel="icon"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234F46E5'/%3E%3Cpath d='M16 8L24 16L16 24L8 16L16 8Z' fill='white'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23FFF5F0'/%3E%3C/svg%3E"
-    type="image/svg+xml">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234F46E5'/%3E%3Cpath d='M16 8L24 16L16 24L8 16L16 8Z' fill='white'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23FFF5F0'/%3E%3C/svg%3E"
+        type="image/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@500;700&display=swap"
         rel="stylesheet">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="header">
-    <div class="container header__container">
-        <a href="./#home" class="logo">
-            <span class="logo__dot"></span>
-            <?= $domainTitle ?>
-        </a>
+    <header class="header">
+        <div class="container header__container">
+            <a href="./#home" class="logo">
+                <span class="logo__dot"></span>
+                <?= $domainTitle ?>
+            </a>
 
-        <nav class="nav">
-            <ul class="nav__list">
-                <li><a href="./#home" class="nav__link">Главная</a></li>
-                <li><a href="./#about" class="nav__link">О платформе</a></li>
-                <li><a href="./#courses" class="nav__link">Курсы</a></li>
-                <li><a href="./#tech" class="nav__link">Технологии</a></li>
-                <li><a href="./#reviews" class="nav__link">Отзывы</a></li>
-            </ul>
-        </nav>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="./#home" class="nav__link">Strona główna</a></li>
+                    <li><a href="./#about" class="nav__link">O platformie</a></li>
+                    <li><a href="./#courses" class="nav__link">Kursy</a></li>
+                    <li><a href="./#tech" class="nav__link">Technologie</a></li>
+                    <li><a href="./#reviews" class="nav__link">Opinie</a></li>
+                </ul>
+            </nav>
 
-        <a href="./#contact" class="btn btn--outline header__btn">Связаться</a>
+            <a href="./#contact" class="btn btn--outline header__btn">Kontakt</a>
 
-        <button class="menu-toggle" id="menu-toggle" aria-label="Открыть меню">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </div>
-</header>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Otwórz menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
 
     <main>
-<section class="hero" id="home">
-    <div class="container hero__container">
-        <div class="hero__content">
-            <div class="badge" data-aos="fade-right">Платформа года</div>
-            <h1 class="hero__title" data-aos="fade-up" data-aos-delay="100">
-                Технология <span class="text-accent">нового</span> поколения
-            </h1>
-            <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="200">
-                Решения, которые меняют правила игры. Откройте новые возможности и переосмыслите подход к развитию
-                вместе с
-                <?= $domainTitle ?>.
-            </p>
-            <div class="hero__actions" data-aos="fade-up" data-aos-delay="300">
-                <a href="#contact" class="btn btn--primary">Начать сейчас</a>
-                <a href="#about" class="btn btn--link">Узнать детали <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-        </div>
-
-        <div class="hero__visual" id="hero-canvas-parent" data-aos="zoom-in" data-aos-delay="400">
-            <canvas id="heroCanvas"></canvas>
-        </div>
-    </div>
-</section>
-<section class="about" id="about">
-    <div class="container about__container">
-        <div class="about__content" data-aos="fade-right">
-            <h2 class="section-title">Технологии, которые <br><span class="text-accent">работают на вас</span></h2>
-            <p class="section-text">
-                <?= $domainTitle ?> — это передовая цифровая инфраструктура, созданная для тех, кто ценит простоту и
-                эффективность. Мы объединили сложные AI-инструменты и превратили их в пошаговый путь, понятный каждому.
-            </p>
-            <ul class="about__list">
-                <li><i class="fa-solid fa-check"></i> Легко разобраться без опыта</li>
-                <li><i class="fa-solid fa-check"></i> Подключение занимает 2 минуты</li>
-                <li><i class="fa-solid fa-check"></i> Экспертная поддержка на всех этапах</li>
-            </ul>
-        </div>
-        <div class="about__visual" id="canvas-container" data-aos="zoom-in">
-            <canvas id="neuralCanvas"></canvas>
-        </div>
-    </div>
-</section>
-
-<section class="courses" id="courses">
-    <div class="container">
-        <div class="section-header" data-aos="fade-up">
-            <h2 class="section-title">Наши программы</h2>
-            <p class="section-subtitle">Практики, применимые уже сегодня для вашего роста</p>
-        </div>
-        <div class="courses__grid">
-            <div class="course-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="course-card__icon"><i class="fa-solid fa-brain"></i></div>
-                <h3>AI-инструменты</h3>
-                <p>Решения для реальных задач: от автоматизации до генерации контента.</p>
-                <a href="#contact" class="course-card__link">Узнать детали</a>
-            </div>
-            <div class="course-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="course-card__icon"><i class="fa-solid fa-chart-line"></i></div>
-                <h3>Стратегия роста</h3>
-                <p>Методологии, доказавшие эффективность в условиях европейского рынка.</p>
-                <a href="#contact" class="course-card__link">Узнать детали</a>
-            </div>
-            <div class="course-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="course-card__icon"><i class="fa-solid fa-rocket"></i></div>
-                <h3>Быстрый старт</h3>
-                <p>Пошаговый путь к пассивному доходу на базе инноваций.</p>
-                <a href="#contact" class="course-card__link">Узнать детали</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="tech" id="tech">
-    <div class="container tech__container">
-        <div class="tech__image" data-aos="fade-right">
-            <img src="/img/three.jpg" alt="Innovation">
-        </div>
-        <div class="tech__content" data-aos="fade-left">
-            <h2 class="section-title">Инновационная <br>экосистема</h2>
-            <p class="section-text">Воплотите мечты в реальность с помощью решений, которые меняют правила игры. Наша
-                платформа уже доступна в Европе.</p>
-            <div class="tech__stats">
-                <div class="stat-item">
-                    <span class="stat-num">99%</span>
-                    <span class="stat-label">Up-time</span>
+        <section class="hero" id="home">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <div class="badge" data-aos="fade-right">Platforma Roku</div>
+                    <h1 class="hero__title" data-aos="fade-up" data-aos-delay="100">
+                        Technologia <span class="text-accent">nowej</span> generacji
+                    </h1>
+                    <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="200">
+                        Rozwiązania, które zmieniają zasady gry. Odkryj nowe możliwości i zdefiniuj na nowo swoje
+                        podejście do rozwoju z
+                        <?= $domainTitle ?>.
+                    </p>
+                    <div class="hero__actions" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#contact" class="btn btn--primary">Zacznij teraz</a>
+                        <a href="#about" class="btn btn--link">Dowiedz się więcej <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-num">24/7</span>
-                    <span class="stat-label">Поддержка</span>
+
+                <div class="hero__visual" id="hero-canvas-parent" data-aos="zoom-in" data-aos-delay="400">
+                    <canvas id="heroCanvas"></canvas>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<section class="reviews" id="reviews">
-    <div class="container">
-        <div class="section-header" data-aos="fade-up">
-            <h2 class="section-title">Отзывы участников</h2>
-        </div>
-        <div class="reviews__grid">
-            <div class="review-card" data-aos="flip-left">
-                <p class="review-text">"
-                    <?= $domainTitle ?> полностью изменил мой подход к работе. Удобная адаптация без сложностей."
-                </p>
-                <div class="review-author">
-                    <img src="/img/two.jpg" alt="User">
-                    <div>
-                        <strong>James Wilson</strong>
-                        <span>Лондон, Англия</span>
+        <section class="about" id="about">
+            <div class="container about__container">
+                <div class="about__content" data-aos="fade-right">
+                    <h2 class="section-title">Technologie, które <br><span class="text-accent">pracują dla Ciebie</span>
+                    </h2>
+                    <p class="section-text">
+                        <?= $domainTitle ?> to zaawansowana infrastruktura cyfrowa stworzona dla tych, którzy cenią
+                        prostotę i efektywność. Połączyliśmy złożone narzędzia AI i przekształciliśmy je w intuicyjną
+                        ścieżkę dostępną dla każdego.
+                    </p>
+                    <ul class="about__list">
+                        <li><i class="fa-solid fa-check"></i> Łatwe do opanowania bez doświadczenia</li>
+                        <li><i class="fa-solid fa-check"></i> Podłączenie zajmuje tylko 2 minuty</li>
+                        <li><i class="fa-solid fa-check"></i> Wsparcie ekspertów na każdym etapie</li>
+                    </ul>
+                </div>
+                <div class="about__visual" id="canvas-container" data-aos="zoom-in">
+                    <canvas id="neuralCanvas"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section class="courses" id="courses">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Nasze programy</h2>
+                    <p class="section-subtitle">Praktyki, które możesz wdrożyć już dziś, aby przyspieszyć swój wzrost
+                    </p>
+                </div>
+                <div class="courses__grid">
+                    <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="course-card__icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3>Narzędzia AI</h3>
+                        <p>Rozwiązania dla realnych wyzwań: od automatyzacji po generowanie treści.</p>
+                        <a href="#contact" class="course-card__link">Szczegóły</a>
+                    </div>
+                    <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="course-card__icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3>Strategia wzrostu</h3>
+                        <p>Metodologie o udowodnionej skuteczności na rynku europejskim.</p>
+                        <a href="#contact" class="course-card__link">Szczegóły</a>
+                    </div>
+                    <div class="course-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="course-card__icon"><i class="fa-solid fa-rocket"></i></div>
+                        <h3>Szybki start</h3>
+                        <p>Krok po kroku do pasywnego dochodu opartego na innowacjach.</p>
+                        <a href="#contact" class="course-card__link">Szczegóły</a>
                     </div>
                 </div>
             </div>
-            <div class="review-card" data-aos="flip-left" data-aos-delay="100">
-                <p class="review-text">"Проверенный партнер. Технологии действительно работают на тебя, а не наоборот."
-                </p>
-                <div class="review-author">
-                    <img src="/img/one.jpg" alt="User">
-                    <div>
-                        <strong>Sarah Jenkins</strong>
-                        <span>Манчестер, Англия</span>
+        </section>
+
+        <section class="tech" id="tech">
+            <div class="container tech__container">
+                <div class="tech__image" data-aos="fade-right">
+                    <img src="/img/three.jpg" alt="Innowacja">
+                </div>
+                <div class="tech__content" data-aos="fade-left">
+                    <h2 class="section-title">Innowacyjny <br>ekosystem</h2>
+                    <p class="section-text">Zrealizuj swoje marzenia dzięki rozwiązaniom, które zmieniają zasady gry.
+                        Nasza platforma jest już dostępna w Polsce i Europie.</p>
+                    <div class="tech__stats">
+                        <div class="stat-item">
+                            <span class="stat-num">99%</span>
+                            <span class="stat-label">Uptime</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">24/7</span>
+                            <span class="stat-label">Wsparcie</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<section class="contact" id="contact">
-    <div class="container contact__container">
-        <div class="contact__info" data-aos="fade-right">
-            <h2 class="section-title">Готовы <br><span class="text-accent">начать обучение?</span></h2>
-            <p class="section-text">Оставьте заявку, и наш эксперт свяжется с вами в течение 15 минут для бесплатной
-                консультации по всем вопросам.</p>
+        </section>
 
-            <div class="contact__card">
-                <p><strong>Адрес офиса в Лондоне:</strong><br>24 Chiswell St, London EC1Y 4TY, UK</p>
-                <p><strong>Телефон:</strong><br><a href="tel:+442094272498">+44 20 9427 2498</a></p>
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Opinie uczestników</h2>
+                </div>
+                <div class="reviews__grid">
+                    <div class="review-card" data-aos="flip-left">
+                        <p class="review-text">"
+                            <?= $domainTitle ?> całkowicie zmienił moje podejście do pracy. Wygodna adaptacja bez
+                            żadnych trudności."
+                        </p>
+                        <div class="review-author">
+                            <img src="/img/two.jpg" alt="Użytkownik">
+                            <div>
+                                <strong>Marek Wiśniewski</strong>
+                                <span>Warszawa, Polska</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card" data-aos="flip-left" data-aos-delay="100">
+                        <p class="review-text">"Sprawdzony partner. Technologie naprawdę pracują dla ciebie, a nie na
+                            odwrót."
+                        </p>
+                        <div class="review-author">
+                            <img src="/img/one.jpg" alt="Użytkownik">
+                            <div>
+                                <strong>Anna Kowalska</strong>
+                                <span>Kraków, Polska</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="contact__form-wrapper" data-aos="fade-left">
-            <form id="ajax-form" class="contact__form">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Ваше имя" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="E-mail" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" id="phone-input" name="phone" placeholder="Телефон (только цифры)" required>
-                </div>
+        <section class="contact" id="contact">
+            <div class="container contact__container">
+                <div class="contact__info" data-aos="fade-right">
+                    <h2 class="section-title">Gotowy, by <br><span class="text-accent">zacząć naukę?</span></h2>
+                    <p class="section-text">Zostaw zgłoszenie, a nasz ekspert skontaktuje się z Tobą w ciągu 15 minut w
+                        celu bezpłatnej konsultacji.</p>
 
-                <div class="form-captcha">
-                    <label id="captcha-label">Сколько будет 5 + 3?</label>
-                    <input type="text" id="captcha-input" placeholder="Ответ" required>
+                    <div class="contact__card">
+                        <p><strong>Adres biura w Warszawie:</strong><br>Złota 59, 00-120 Warszawa, Polska</p>
+                        <p><strong>Telefon:</strong><br><a href="tel:+48228122949">+48 22 812 29 49</a></p>
+                    </div>
                 </div>
 
-                <label class="form-checkbox">
-                    <input type="checkbox" required>
-                    <span>Я согласен с <a href="./personal-data-policy.php" target="_blank">политикой
-                            конфиденциальности</a></span>
-                </label>
+                <div class="contact__form-wrapper" data-aos="fade-left">
+                    <form id="ajax-form" class="contact__form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Twoje imię" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="E-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone-input" name="phone" placeholder="Telefon (same cyfry)" required>
+                        </div>
 
-                <button type="submit" class="btn btn--primary btn--full">Запросить доступ</button>
+                        <div class="form-captcha">
+                            <label id="captcha-label">Ile to jest 5 + 3?</label>
+                            <input type="text" id="captcha-input" placeholder="Wynik" required>
+                        </div>
 
-                <div id="form-response" class="form-response"></div>
-            </form>
-        </div>
-    </div>
-</section>
+                        <label class="form-checkbox">
+                            <input type="checkbox" required>
+                            <span>Zgadzam się z <a href="./personal-data-policy.php" target="_blank">polityką
+                                    prywatności</a></span>
+                        </label>
+
+                        <button type="submit" class="btn btn--primary btn--full">Poproś o dostęp</button>
+
+                        <div id="form-response" class="form-response"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
 
     </main>
 
@@ -231,64 +239,67 @@
                     <?= $domainTitle ?>
                 </a>
                 <p class="footer__desc">
-                    Передовая цифровая инфраструктура для вашего обучения. Технологии, которые работают на вас.
+                    Zaawansowana infrastruktura cyfrowa dla Twojej edukacji. Technologie, które pracują dla Ciebie.
                 </p>
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Навигация</h4>
+                <h4 class="footer__title">Nawigacja</h4>
                 <ul class="footer__links">
-                    <li><a href="./#home">Главная</a></li>
-                    <li><a href="./#about">О платформе</a></li>
-                    <li><a href="./#courses">Курсы</a></li>
-                    <li><a href="./#tech">Технологии</a></li>
+                    <li><a href="./#home">Strona główna</a></li>
+                    <li><a href="./#about">O platformie</a></li>
+                    <li><a href="./#courses">Kursy</a></li>
+                    <li><a href="./#tech">Technologie</a></li>
                 </ul>
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Документы</h4>
+                <h4 class="footer__title">Dokumenty</h4>
                 <ul class="footer__links">
                     <li><a href="./privacy.php">Privacy Policy</a></li>
                     <li><a href="./cookies.php">Cookie Policy</a></li>
                     <li><a href="./terms.php">Terms of Service</a></li>
                     <li><a href="./return.php">Return Policy</a></li>
                     <li><a href="./disclaimer.php">Disclaimer</a></li>
-                    <li><a href="./contact.php">Contact Us</a></li>
-                    <li><a href="./personal-data-policy.php">Data Policy</a></li>
+                    <li><a href="./contact.php">Kontakt</a></li>
+                    <li><a href="./personal-data-policy.php">Polityka danych</a></li>
                 </ul>
             </div>
 
             <div class="footer__col">
-                <h4 class="footer__title">Контакты</h4>
+                <h4 class="footer__title">Kontakt</h4>
                 <ul class="footer__contact">
                     <li>
                         <i class="fa-solid fa-phone"></i>
-                        <a href="tel:+442094272498">+44 20 9427 2498</a>
+                        <a href="tel:+48228122949">+48 22 812 29 49</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:hello@<?= $fullDomain ?>">hello@
+                        <a href="mailto:hello@<?= $fullDomain ?>" class="contact-link">hello@
                             <?= $fullDomain ?>
                         </a>
                     </li>
                     <li>
                         <i class="fa-solid fa-location-dot"></i>
-                        <span>24 Chiswell St, London EC1Y 4TY, UK</span>
+                        <span>Złota 59, 00-120 Warszawa, Polska</span>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="container footer__bottom">
             <p>&copy; 2026
-                <?= $domainTitle ?>. Платформа уже доступна в Европе.
+                <?= $domainTitle ?>. Platforma dostępna w całej Europie.
             </p>
         </div>
     </footer>
-<div id="cookie-popup" class="cookie-popup">
-    <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.php">Cookie политике</a>.
-    </p>
-    <button id="cookie-accept" class="btn btn--primary">Принять</button>
-</div>
+
+    <div id="cookie-popup" class="cookie-popup">
+        <p>Ta strona używa plików cookies w celu poprawy działania. Więcej informacji w naszej <a
+                href="./cookies.php">Polityce Cookies</a>.
+        </p>
+        <button id="cookie-accept" class="btn btn--primary">Akceptuję</button>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>

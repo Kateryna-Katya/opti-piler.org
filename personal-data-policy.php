@@ -12,23 +12,23 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
 
 ?>
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <?= $domainTitle ?> — Инновации на пальцах
+        <?= $domainTitle ?> — Polityka przetwarzania danych osobowych
     </title>
-<link rel="icon"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234F46E5'/%3E%3Cpath d='M16 8L24 16L16 24L8 16L16 8Z' fill='white'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23FFF5F0'/%3E%3C/svg%3E"
-    type="image/svg+xml">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234F46E5'/%3E%3Cpath d='M16 8L24 16L16 24L8 16L16 8Z' fill='white'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23FFF5F0'/%3E%3C/svg%3E"
+        type="image/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@500;700&display=swap"
         rel="stylesheet">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -44,97 +44,99 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
 
         <nav class="nav">
             <ul class="nav__list">
-                <li><a href="./#home" class="nav__link">Главная</a></li>
-                <li><a href="./#about" class="nav__link">О платформе</a></li>
-                <li><a href="./#courses" class="nav__link">Курсы</a></li>
-                <li><a href="./#tech" class="nav__link">Технологии</a></li>
-                <li><a href="./#reviews" class="nav__link">Отзывы</a></li>
+                <li><a href="./#home" class="nav__link">Strona główna</a></li>
+                <li><a href="./#about" class="nav__link">O platformie</a></li>
+                <li><a href="./#courses" class="nav__link">Kursy</a></li>
+                <li><a href="./#tech" class="nav__link">Technologie</a></li>
+                <li><a href="./#reviews" class="nav__link">Opinie</a></li>
             </ul>
         </nav>
 
-        <a href="./#contact" class="btn btn--outline header__btn">Связаться</a>
+        <a href="./#contact" class="btn btn--outline header__btn">Kontakt</a>
 
-        <button class="menu-toggle" id="menu-toggle" aria-label="Открыть меню">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Otwórz menu">
             <span></span>
             <span></span>
             <span></span>
         </button>
     </div>
 </header>
+
 <main>
     <section class="pages">
         <div class="container">
-            <h1 data-aos="fade-up">Политика обработки персональных данных</h1>
+            <h1 data-aos="fade-up">Polityka przetwarzania danych osobowych</h1>
 
             <div class="policy-intro" data-aos="fade-up">
                 <p>
-                    Настоящая политика (далее — «Политика») определяет порядок и условия обработки персональных
-                    данных, предпринимаемые платформой <strong><?= $domainTitle ?></strong> (далее — «Оператор»), 
-                    зарегистрированной в Великобритании, и устанавливает меры по обеспечению безопасности этих данных в соответствии с регламентом GDPR.
+                    Niniejsza polityka (dalej – „Polityka”) określa zasady i warunki przetwarzania danych osobowych przez platformę 
+                    <strong><?= $domainTitle ?></strong> (dalej – „Operator”), działającą na terenie Polski i Unii Europejskiej, 
+                    oraz ustanawia środki zapewniające bezpieczeństwo tych danych zgodnie z rozporządzeniem RODO (GDPR).
                 </p>
             </div>
 
             <div class="contact-cards">
                 <div class="contact-card" data-aos="zoom-in" data-aos-delay="100">
                     <div class="contact-card__icon">
-                        <i data-lucide="fingerprint"></i>
+                        <i class="fa-solid fa-fingerprint"></i>
                     </div>
-                    <h2>Ваши данные</h2>
-                    <p>Мы собираем Email, имя и телефон только для связи с вами и предоставления экспертных услуг.</p>
+                    <h2>Twoje dane</h2>
+                    <p>Zbieramy adres e-mail, imię oraz numer telefonu wyłącznie w celu kontaktu z Tobą i świadczenia usług eksperckich.</p>
                 </div>
 
                 <div class="contact-card" data-aos="zoom-in" data-aos-delay="200">
                     <div class="contact-card__icon">
-                        <i data-lucide="shield-check"></i>
+                        <i class="fa-solid fa-shield-halved"></i>
                     </div>
-                    <h2>Безопасность</h2>
-                    <p>Мы используем современные методы шифрования для защиты вашей информации от несанкционированного доступа.</p>
+                    <h2>Bezpieczeństwo</h2>
+                    <p>Stosujemy nowoczesne metody szyfrowania, aby chronić Twoje informacje przed nieautoryzowanym dostępem.</p>
                 </div>
 
                 <div class="contact-card" data-aos="zoom-in" data-aos-delay="300">
                     <div class="contact-card__icon">
-                        <i data-lucide="check-circle"></i>
+                        <i class="fa-solid fa-circle-check"></i>
                     </div>
-                    <h2>Ваше согласие</h2>
-                    <p>Вы всегда можете отозвать согласие на обработку данных, написав нам на электронную почту.</p>
+                    <h2>Twoja zgoda</h2>
+                    <p>Zawsze możesz wycofać zgodę na przetwarzanie danych, pisząc do nas wiadomość e-mail.</p>
                 </div>
             </div>
 
             <div class="policy-details" style="margin-top: 40px;">
-                <h2 data-aos="fade-up">1. Основные понятия</h2>
+                <h2 data-aos="fade-up">1. Podstawowe pojęcia</h2>
                 <p data-aos="fade-up">
-                    <strong>Персональные данные</strong> — любая информация, относящаяся к Пользователю сайта <strong><?= $fullDomain ?></strong>.
-                    Обработка включает сбор, запись, накопление, хранение и удаление данных.
+                    <strong>Dane osobowe</strong> — wszelkie informacje dotyczące Użytkownika serwisu <strong><?= $fullDomain ?></strong>.
+                    Przetwarzanie obejmuje zbieranie, utrwalanie, przechowywanie i usuwanie danych.
                 </p>
 
-                <h2 data-aos="fade-up">2. Цели обработки</h2>
+                <h2 data-aos="fade-up">2. Cele przetwarzania</h2>
                 <ul data-aos="fade-up">
-                    <li>Идентификация Пользователя для доступа к сервисам консалтинговой платформы.</li>
-                    <li>Установление обратной связи и обработка заявок.</li>
-                    <li>Исполнение договоров на консалтинговые услуги в Великобритании и Европе.</li>
-                    <li>Улучшение качества работы сайта посредством аналитики.</li>
+                    <li>Identyfikacja Użytkownika w celu uzyskania dostępu do usług platformy consultingowej.</li>
+                    <li>Umożliwienie kontaktu zwrotnego oraz obsługa zgłoszeń.</li>
+                    <li>Realizacja umów na usługi doradcze w Polsce i Europie.</li>
+                    <li>Poprawa jakości działania serwisu poprzez analitykę.</li>
                 </ul>
 
-                <h2 data-aos="fade-up">3. Сбор и хранение</h2>
+                <h2 data-aos="fade-up">3. Gromadzenie i przechowywanie</h2>
                 <p data-aos="fade-up">
-                    Оператор принимает все необходимые технические меры для защиты данных от взлома. 
-                    Ваши номера телефонов проходят валидацию по стандартам Великобритании (UK) и Европы. 
-                    Мы никогда не передаем ваши данные третьим лицам без вашего прямого согласия.
+                    Operator podejmuje wszelkie niezbędne środki techniczne w celu ochrony danych przed nieautoryzowanym dostępem. 
+                    Podane numery telefonów są weryfikowane zgodnie ze standardami polskimi i europejskimi. 
+                    Nigdy nie przekazujemy Twoich danych osobom trzecim bez Twojej wyraźnej zgody.
                 </p>
 
-                <h2 data-aos="fade-up">4. Ваши права (GDPR)</h2>
+                <h2 data-aos="fade-up">4. Twoje prawa (RODO)</h2>
                 <p data-aos="fade-up">
-                    Вы имеете право на доступ к своим данным, их исправление, удаление («право на забвение») и ограничение обработки. Для реализации этих прав направьте запрос на нашу почту.
+                    Masz prawo do dostępu do swoich danych, ich sprostowania, usunięcia („prawo do bycia zapomnianym”) oraz ograniczenia przetwarzania. Aby skorzystać z tych praw, prosimy o kontakt mailowy.
                 </p>
             </div>
 
             <div class="contact-extra" data-aos="fade-up">
                 <p>
-                    Если у вас возникли вопросы касательно обработки данных в <strong><?= $domainTitle ?></strong>, мы на связи:
+                    W przypadku pytań dotyczących przetwarzania danych w <strong><?= $domainTitle ?></strong>, pozostajemy do dyspozycji:
                 </p>
                 <div style="margin-top: 20px;">
-                    Email: <a href="mailto:hello@<?= $fullDomain ?>" class="contact-link">hello@<?= $fullDomain ?></a><br>
-                    Адрес: 24 Chiswell St, London EC1Y 4TY, UK
+                    Email: <a href="mailto:hello@opti-piler.org" class="contact-link">hello@opti-piler.org</a><br>
+                    Telefon: <a href="tel:+48228122949" class="contact-link">+48 22 812 29 49</a><br>
+                    Adres: Złota 59, 00-120 Warszawa, Polska
                 </div>
                 <br>
             </div>
@@ -142,73 +144,69 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
     </section>
 </main>
 
-
-    <footer class="footer">
-        <div class="container footer__grid">
-            <div class="footer__col">
-                <a href="./#home" class="logo footer__logo">
-                    <span class="logo__dot"></span>
-                    <?= $domainTitle ?>
-                </a>
-                <p class="footer__desc">
-                    Передовая цифровая инфраструктура для вашего обучения. Технологии, которые работают на вас.
-                </p>
-            </div>
-
-            <div class="footer__col">
-                <h4 class="footer__title">Навигация</h4>
-                <ul class="footer__links">
-                    <li><a href="./#home">Главная</a></li>
-                    <li><a href="./#about">О платформе</a></li>
-                    <li><a href="./#courses">Курсы</a></li>
-                    <li><a href="./#tech">Технологии</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__col">
-                <h4 class="footer__title">Документы</h4>
-                <ul class="footer__links">
-                    <li><a href="./privacy.php">Privacy Policy</a></li>
-                    <li><a href="./cookies.php">Cookie Policy</a></li>
-                    <li><a href="./terms.php">Terms of Service</a></li>
-                    <li><a href="./return.php">Return Policy</a></li>
-                    <li><a href="./disclaimer.php">Disclaimer</a></li>
-                    <li><a href="./contact.php">Contact Us</a></li>
-                    <li><a href="./personal-data-policy.php">Data Policy</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__col">
-                <h4 class="footer__title">Контакты</h4>
-                <ul class="footer__contact">
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        <a href="tel:+442094272498">+44 20 9427 2498</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:hello@<?= $fullDomain ?>">hello@
-                            <?= $fullDomain ?>
-                        </a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span>24 Chiswell St, London EC1Y 4TY, UK</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="container footer__bottom">
-            <p>&copy; 2026
-                <?= $domainTitle ?>. Платформа уже доступна в Европе.
+<footer class="footer">
+    <div class="container footer__grid">
+        <div class="footer__col">
+            <a href="./#home" class="logo footer__logo">
+                <span class="logo__dot"></span>
+                <?= $domainTitle ?>
+            </a>
+            <p class="footer__desc">
+                Zaawansowana infrastruktura cyfrowa dla Twojej edukacji. Technologie, które pracują dla Ciebie.
             </p>
         </div>
-    </footer>
+
+        <div class="footer__col">
+            <h4 class="footer__title">Nawigacja</h4>
+            <ul class="footer__links">
+                <li><a href="./#home">Strona główna</a></li>
+                <li><a href="./#about">O platformie</a></li>
+                <li><a href="./#courses">Kursy</a></li>
+                <li><a href="./#tech">Technologie</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__col">
+            <h4 class="footer__title">Dokumenty</h4>
+            <ul class="footer__links">
+                <li><a href="./privacy.php">Privacy Policy</a></li>
+                <li><a href="./cookies.php">Cookie Policy</a></li>
+                <li><a href="./terms.php">Terms of Service</a></li>
+                <li><a href="./return.php">Return Policy</a></li>
+                <li><a href="./disclaimer.php">Disclaimer</a></li>
+                <li><a href="./contact.php">Kontakt</a></li>
+                <li><a href="./personal-data-policy.php">Polityka danych</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__col">
+            <h4 class="footer__title">Kontakt</h4>
+            <ul class="footer__contact">
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+48228122949">+48 22 812 29 49</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:hello@<?= $fullDomain ?>" class="contact-link">hello@<?= $fullDomain ?></a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Złota 59, 00-120 Warszawa, Polska</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container footer__bottom">
+        <p>&copy; 2026 <?= $domainTitle ?>. Platforma jest już dostępna w Europie.</p>
+    </div>
+</footer>
+
 <div id="cookie-popup" class="cookie-popup">
-    <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.php">Cookie политике</a>.
-    </p>
-    <button id="cookie-accept" class="btn btn--primary">Принять</button>
+    <p>Ta strona używa plików cookies w celu poprawy działania. Więcej informacji w naszej <a href="./cookies.php">Polityce Cookies</a>.</p>
+    <button id="cookie-accept" class="btn btn--primary">Akceptuję</button>
 </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>

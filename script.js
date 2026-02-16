@@ -1,15 +1,15 @@
 /**
  * Omnic-Drive Project: Full Managed Script
- * Version: 2026.02 - Fixed Mobile Menu & Cookie Popup
+ * Version: 2026.02 - Fixed Mobile Menu & Cookie Popup (Polish Localization)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- 1. COOKIE POPUP (ПЕРЕНЕСЕНО ВВЕРХ) ---
+    // --- 1. COOKIE POPUP (PRZENIESIONO NA GÓRĘ) ---
     const cp = document.getElementById('cookie-popup');
     const ca = document.getElementById('cookie-accept');
     
-    // Показываем попап через 2 секунды, если еще не принимали
+    // Pokazujemy popup po 2 sekundach, jeśli nie został jeszcze zaakceptowany
     if (cp && !localStorage.getItem('cookieAccepted')) {
         setTimeout(() => cp.classList.add('active'), 2000);
     }
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- 2. МОБИЛЬНОЕ МЕНЮ (ПОД ВАШ HTML) ---
+    // --- 2. MENU MOBILNE ---
     const menuToggle = document.getElementById('menu-toggle');
     const nav = document.querySelector('.nav');
     const navLinks = document.querySelectorAll('.nav__link');
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const isActive = menuToggle.classList.toggle('active');
             nav.classList.toggle('active');
             
-            // Блокировка скролла страницы при открытом меню
+            // Blokada skrolowania strony przy otwartym menu
             document.body.style.overflow = isActive ? 'hidden' : '';
         };
 
@@ -40,14 +40,14 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleMenu();
         });
 
-        // Закрываем при клике на любую ссылку навигации
+        // Zamykanie przy kliknięciu w dowolny link nawigacyjny
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 if (nav.classList.contains('active')) toggleMenu();
             });
         });
 
-        // Закрытие при клике вне области меню
+        // Zamykanie przy kliknięciu poza obszarem menu
         document.addEventListener('click', (e) => {
             if (nav.classList.contains('active') && !nav.contains(e.target) && e.target !== menuToggle) {
                 toggleMenu();
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- 3. ИНИЦИАЛИЗАЦИЯ AOS ---
+    // --- 3. INICJALIZACJA AOS ---
     const loadAOS = () => {
         const script = document.createElement('script');
         script.src = "https://unpkg.com/aos@2.3.1/dist/aos.js";
@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('resize', () => { initAboutCanvas(); setupAbout(); });
     }
 
-    // --- 6. КОНТАКТНАЯ ФОРМА ---
+    // --- 6. FORMULARZ KONTAKTOWY ---
     const form = document.getElementById('ajax-form');
     if (form) {
         const cLabel = document.getElementById('captcha-label');
@@ -188,16 +188,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const response = document.getElementById('form-response');
         const n1 = Math.floor(Math.random() * 10), n2 = Math.floor(Math.random() * 10);
         const sum = n1 + n2;
-        if (cLabel) cLabel.innerText = `Сколько будет ${n1} + ${n2}?`;
+        if (cLabel) cLabel.innerText = `Ile to jest ${n1} + ${n2}?`;
 
         form.addEventListener('submit', (e) => {
             e.preventDefault();
             if (parseInt(cInput?.value) !== sum) {
-                response.innerText = "Ошибка капчи!";
+                response.innerText = "Błąd captcha!";
                 response.className = "form-response error";
+                response.style.display = "block";
                 return;
             }
-            response.innerText = "Успешно отправлено!";
+            response.innerText = "Wysłano pomyślnie!";
             response.className = "form-response success";
             response.style.display = "block";
             form.reset();

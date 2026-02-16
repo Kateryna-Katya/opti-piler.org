@@ -12,23 +12,23 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
 
 ?>
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <?= $domainTitle ?> — Инновации на пальцах
+        <?= $domainTitle ?> — Polityka plików cookie
     </title>
-<link rel="icon"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234F46E5'/%3E%3Cpath d='M16 8L24 16L16 24L8 16L16 8Z' fill='white'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23FFF5F0'/%3E%3C/svg%3E"
-    type="image/svg+xml">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234F46E5'/%3E%3Cpath d='M16 8L24 16L16 24L8 16L16 8Z' fill='white'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23FFF5F0'/%3E%3C/svg%3E"
+        type="image/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@500;700&display=swap"
         rel="stylesheet">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -44,95 +44,96 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
 
         <nav class="nav">
             <ul class="nav__list">
-                <li><a href="./#home" class="nav__link">Главная</a></li>
-                <li><a href="./#about" class="nav__link">О платформе</a></li>
-                <li><a href="./#courses" class="nav__link">Курсы</a></li>
-                <li><a href="./#tech" class="nav__link">Технологии</a></li>
-                <li><a href="./#reviews" class="nav__link">Отзывы</a></li>
+                <li><a href="./#home" class="nav__link">Strona główna</a></li>
+                <li><a href="./#about" class="nav__link">O platformie</a></li>
+                <li><a href="./#courses" class="nav__link">Kursy</a></li>
+                <li><a href="./#tech" class="nav__link">Technologie</a></li>
+                <li><a href="./#reviews" class="nav__link">Opinie</a></li>
             </ul>
         </nav>
 
-        <a href="./#contact" class="btn btn--outline header__btn">Связаться</a>
+        <a href="./#contact" class="btn btn--outline header__btn">Kontakt</a>
 
-        <button class="menu-toggle" id="menu-toggle" aria-label="Открыть меню">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Otwórz menu">
             <span></span>
             <span></span>
             <span></span>
         </button>
     </div>
 </header>
+
 <main>
     <section class="pages">
         <div class="container">
-            <h1 data-aos="fade-up">Политика использования файлов cookie</h1>
+            <h1 data-aos="fade-up">Polityka plików cookie</h1>
 
             <p data-aos="fade-up" data-aos-delay="100">
-                Добро пожаловать на <strong><?= $domainTitle ?></strong>! Чтобы улучшить ваш опыт
-                взаимодействия с нашим сайтом, обеспечить его корректную работу и
-                анализировать активность пользователей, мы используем файлы cookie и
-                схожие технологии. Настоящая политика подробно объясняет, какие
-                именно технологии мы применяем, для каких целей, и как вы можете ими
-                управлять.
+                Witaj w <strong><?= $domainTitle ?></strong>! Aby poprawić Twoje doświadczenia
+                podczas korzystania z naszej strony, zapewnić jej poprawne działanie oraz
+                analizować aktywność użytkowników, używamy plików cookie i
+                podobnych technologii. Niniejsza polityka szczegółowo wyjaśnia, jakie
+                technologie stosujemy, w jakich celach oraz jak możesz nimi
+                zarządzać.
             </p>
 
-            <h2 data-aos="fade-up">Что такое файлы cookie?</h2>
+            <h2 data-aos="fade-up">Czym są pliki cookie?</h2>
             <p data-aos="fade-up">
-                Файл cookie — это небольшой фрагмент данных (текстовый файл),
-                который веб-сайт сохраняет на вашем устройстве, когда вы его посещаете. Это позволяет платформе 
-                <strong><?= $domainTitle ?></strong> "помнить" ваши действия и предпочтения 
-                (например, язык, настройки региона и другие параметры) в течение определенного времени.
+                Plik cookie to niewielki fragment danych (plik tekstowy),
+                który strona internetowa zapisuje na Twoim urządzeniu podczas jej odwiedzania. Pozwala to platformie 
+                <strong><?= $domainTitle ?></strong> "pamiętać" Twoje działania i preferencje 
+                (takie jak język, ustawienia regionalne i inne parametry) przez określony czas.
             </p>
 
-            <h2 data-aos="fade-up">Какие типы файлов cookie мы используем?</h2>
+            <h2 data-aos="fade-up">Jakie rodzaje plików cookie wykorzystujemy?</h2>
             <div class="contact-cards">
                 <div class="contact-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="contact-card__icon"><i data-lucide="shield-check"></i></div>
-                    <h3>Необходимые</h3>
-                    <p>Критически важны для функционирования сайта и его базовых возможностей безопасности.</p>
+                    <div class="contact-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Niezbędne</h3>
+                    <p>Kluczowe dla funkcjonowania strony i jej podstawowych funkcji bezpieczeństwa.</p>
                 </div>
 
                 <div class="contact-card" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="contact-card__icon"><i data-lucide="bar-chart-3"></i></div>
-                    <h3>Аналитические</h3>
-                    <p>Помогают нам анонимно собирать информацию о том, как посетители используют наш контент.</p>
+                    <div class="contact-card__icon"><i class="fa-solid fa-chart-simple"></i></div>
+                    <h3>Analityczne</h3>
+                    <p>Pomagają nam anonimowo zbierać informacje o tym, jak odwiedzający korzystają z naszych treści.</p>
                 </div>
 
                 <div class="contact-card" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="contact-card__icon"><i data-lucide="settings"></i></div>
-                    <h3>Функциональные</h3>
-                    <p>Позволяют сайту запоминать ваш выбор для предоставления более персонализированного опыта.</p>
+                    <div class="contact-card__icon"><i class="fa-solid fa-sliders"></i></div>
+                    <h3>Funkcjonalne</h3>
+                    <p>Pozwalają stronie zapamiętać Twoje wybory, aby zapewnić bardziej spersonalizowane doświadczenie.</p>
                 </div>
             </div>
 
             <div class="policy-details" style="margin-top: 40px;">
-                <h2 data-aos="fade-up">Зачем мы их используем?</h2>
+                <h2 data-aos="fade-up">Dlaczego ich używamy?</h2>
                 <ul data-aos="fade-up">
-                    <li>Обеспечение стабильной и безопасной работы сайта.</li>
-                    <li>Анализ пользовательского поведения для оптимизации структуры.</li>
-                    <li>Персонализация контента для удобства пользователей в Великобритании и Европе.</li>
-                    <li>Предоставление релевантных маркетинговых материалов.</li>
+                    <li>Zapewnienie stabilnego i bezpiecznego działania strony.</li>
+                    <li>Analiza zachowań użytkowników w celu optymalizacji struktury serwisu.</li>
+                    <li>Personalizacja treści dla wygody użytkowników w Polsce i Europie.</li>
+                    <li>Dostarczanie istotnych materiałów marketingowych.</li>
                 </ul>
 
-                <h2 data-aos="fade-up">Ваш выбор</h2>
+                <h2 data-aos="fade-up">Twój wybór</h2>
                 <p data-aos="fade-up">
-                    Вы имеете полный контроль над файлами cookie. Вы можете в любой момент изменить настройки в браузере. Однако отключение строго необходимых cookie может привести к некорректной работе некоторых функций.
+                    Masz pełną kontrolę nad plikami cookie. W każdej chwili możesz zmienić ustawienia w swojej przeglądarce. Jednak wyłączenie niezbędnych plików cookie może spowodować nieprawidłowe działanie niektórych funkcji serwisu.
                 </p>
 
-                <h2 data-aos="fade-up">Файлы cookie третьих сторон</h2>
+                <h2 data-aos="fade-up">Pliki cookie stron trzecich</h2>
                 <p data-aos="fade-up">
-                    На некоторых страницах <strong><?= $domainTitle ?></strong> мы можем использовать сторонние сервисы, такие как Google Analytics или визуализации Three.js. Мы рекомендуем ознакомиться с их политиками конфиденциальности.
+                    Na niektórych stronach <strong><?= $domainTitle ?></strong> możemy korzystać z usług zewnętrznych, takich jak Google Analytics czy wizualizacje Three.js. Zalecamy zapoznanie się z ich politykami prywatności.
                 </p>
             </div>
 
             <div class="contact-extra" data-aos="fade-up">
-                <h2>Контактная информация</h2>
+                <h2>Informacje kontaktowe</h2>
                 <p>
-                    Если у вас возникли вопросы касательно нашей политики на <strong><?= $domainTitle ?></strong>, свяжитесь с нами:
+                    Jeśli masz pytania dotyczące naszej polityki w <strong><?= $domainTitle ?></strong>, skontaktuj się z nami:
                 </p>
                 <div style="margin-top: 20px;">
-                    Email: <a href="mailto:hello@<?= $fullDomain ?>" class="contact-link">hello@<?= $fullDomain ?></a><br>
-                    Телефон: <a href="tel:+442094272498" class="contact-link">+44 20 9427 2498</a><br>
-                    Адрес: 24 Chiswell St, London EC1Y 4TY, UK
+                    Email: <a href="mailto:hello@opti-piler.org" class="contact-link">hello@opti-piler.org</a><br>
+                    Telefon: <a href="tel:+48228122949" class="contact-link">+48 22 812 29 49</a><br>
+                    Adres: Złota 59, 00-120 Warszawa, Polska
                 </div>
                 <br>
             </div>
@@ -140,73 +141,72 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
     </section>
 </main>
 
-
-    <footer class="footer">
-        <div class="container footer__grid">
-            <div class="footer__col">
-                <a href="./#home" class="logo footer__logo">
-                    <span class="logo__dot"></span>
-                    <?= $domainTitle ?>
-                </a>
-                <p class="footer__desc">
-                    Передовая цифровая инфраструктура для вашего обучения. Технологии, которые работают на вас.
-                </p>
-            </div>
-
-            <div class="footer__col">
-                <h4 class="footer__title">Навигация</h4>
-                <ul class="footer__links">
-                    <li><a href="./#home">Главная</a></li>
-                    <li><a href="./#about">О платформе</a></li>
-                    <li><a href="./#courses">Курсы</a></li>
-                    <li><a href="./#tech">Технологии</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__col">
-                <h4 class="footer__title">Документы</h4>
-                <ul class="footer__links">
-                    <li><a href="./privacy.php">Privacy Policy</a></li>
-                    <li><a href="./cookies.php">Cookie Policy</a></li>
-                    <li><a href="./terms.php">Terms of Service</a></li>
-                    <li><a href="./return.php">Return Policy</a></li>
-                    <li><a href="./disclaimer.php">Disclaimer</a></li>
-                    <li><a href="./contact.php">Contact Us</a></li>
-                    <li><a href="./personal-data-policy.php">Data Policy</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__col">
-                <h4 class="footer__title">Контакты</h4>
-                <ul class="footer__contact">
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        <a href="tel:+442094272498">+44 20 9427 2498</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:hello@<?= $fullDomain ?>">hello@
-                            <?= $fullDomain ?>
-                        </a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span>24 Chiswell St, London EC1Y 4TY, UK</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="container footer__bottom">
-            <p>&copy; 2026
-                <?= $domainTitle ?>. Платформа уже доступна в Европе.
+<footer class="footer">
+    <div class="container footer__grid">
+        <div class="footer__col">
+            <a href="./#home" class="logo footer__logo">
+                <span class="logo__dot"></span>
+                <?= $domainTitle ?>
+            </a>
+            <p class="footer__desc">
+                Zaawansowana infrastruktura cyfrowa dla Twojej edukacji. Technologie, które pracują dla Ciebie.
             </p>
         </div>
-    </footer>
+
+        <div class="footer__col">
+            <h4 class="footer__title">Nawigacja</h4>
+            <ul class="footer__links">
+                <li><a href="./#home">Strona główna</a></li>
+                <li><a href="./#about">O platformie</a></li>
+                <li><a href="./#courses">Kursy</a></li>
+                <li><a href="./#tech">Technologie</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__col">
+            <h4 class="footer__title">Dokumenty</h4>
+            <ul class="footer__links">
+                <li><a href="./privacy.php">Privacy Policy</a></li>
+                <li><a href="./cookies.php">Cookie Policy</a></li>
+                <li><a href="./terms.php">Terms of Service</a></li>
+                <li><a href="./return.php">Return Policy</a></li>
+                <li><a href="./disclaimer.php">Disclaimer</a></li>
+                <li><a href="./contact.php">Kontakt</a></li>
+                <li><a href="./personal-data-policy.php">Polityka danych</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__col">
+            <h4 class="footer__title">Kontakt</h4>
+            <ul class="footer__contact">
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+48228122949">+48 22 812 29 49</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:hello@<?= $fullDomain ?>" class="contact-link">hello@<?= $fullDomain ?></a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Złota 59, 00-120 Warszawa, Polska</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container footer__bottom">
+        <p>&copy; 2026
+            <?= $domainTitle ?>. Platforma jest już dostępna w Europie.
+        </p>
+    </div>
+</footer>
+
 <div id="cookie-popup" class="cookie-popup">
-    <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.php">Cookie политике</a>.
+    <p>Ta strona używa plików cookies w celu poprawy działania. Więcej informacji w naszej <a href="./cookies.php">Polityce Cookies</a>.
     </p>
-    <button id="cookie-accept" class="btn btn--primary">Принять</button>
+    <button id="cookie-accept" class="btn btn--primary">Akceptuję</button>
 </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
